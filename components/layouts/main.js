@@ -1,7 +1,11 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { Box, Container } from "@chakra-ui/react";
 
-const Main = ({ children, router }) => {
+import NavBar from "../navbar";
+
+const Main = ({ children }) => {
+	const router = useRouter();
 	return (
 		<Box as="main" pb={8}>
 			<Head>
@@ -11,6 +15,8 @@ const Main = ({ children, router }) => {
 				/>
 				<title> Joshua A. - Homepage</title>
 			</Head>
+
+			<NavBar path={router.asPath} />
 
 			<Container maxW="container.md" pt={14}>
 				{children}
