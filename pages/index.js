@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from "react-icons/io5";
+import { IoLogoTwitter, IoLogoGithub } from "react-icons/io5";
 
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
@@ -171,7 +171,7 @@ const Page = () => {
                             title="Dev as Life"
                             thumbnail={thumbYouTube}
                         >
-                            My mentor's YouTube channel
+                            My mentor&apos;s YouTube channel
                         </GridItem>
                     </SimpleGrid>
 
