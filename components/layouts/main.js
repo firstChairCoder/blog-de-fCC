@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { Box, Container } from "@chakra-ui/react";
 
 import NavBar from "../navbar";
+import Footer from "../footer";
 
 const Main = ({ children }) => {
 	const router = useRouter();
@@ -20,6 +21,8 @@ const Main = ({ children }) => {
 
 			<Container maxW="container.md" pt={14}>
 				{children}
+
+				<Footer />
 			</Container>
 		</Box>
 	);
